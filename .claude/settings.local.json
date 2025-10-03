@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mvn clean:*)",
+      "Bash(where java)",
+      "Bash(dir)",
+      "Bash(mvnw.cmd clean:*)",
+      "Bash(cmd /c mvnw.cmd clean compile)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
