@@ -21,7 +21,7 @@ server:
 
 # JWT Configuration
 jwt:
-  secret: ${JWT_SECRET}
+  secret: ${JWT_SECRET:mySecretKeyForJWTShouldBeAtLeast256BitsLongForHS256AlgorithmSecureKey2024}
   expiration: 86400000
 
 # Swagger Configuration

@@ -13,4 +13,5 @@ echo "Database URL: ${DATABASE_URL:0:30}..."
 exec java -Xmx512m -Xms256m \
   -Dserver.port=$PORT \
   -Dspring.profiles.active=$SPRING_PROFILES_ACTIVE \
+  -Djava.security.egd=file:/dev/./urandom \
   -jar target/todo-api-1.0.0.jar
