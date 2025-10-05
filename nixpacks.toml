@@ -1,8 +1,8 @@
 [phases.setup]
-nixPkgs = ['maven', 'openjdk21']
+nixPkgs = ['...', 'maven', 'openjdk-21']
 
 [phases.build]
 cmds = ['mvn clean package -DskipTests']
 
 [start]
-cmd = 'java -jar target/todo-api-1.0.0.jar'
+cmd = 'java -jar target/todo-api-1.0.0.jar --spring.profiles.active=production'
